@@ -32,6 +32,9 @@
             border-bottom: 1px solid transparent;
             padding-bottom: 3px;
             transition: 0.3s;
+            &:hover {
+                color: @twilight;
+            }
         }
     }
 }
@@ -41,13 +44,11 @@
         flex-flow: column wrap;
         ul.menu {
             display: flex;
+            flex-direction: column;
+            li a {
+                font-size: 1.4rem;
+            }
         }
-    }
-}
-
-@media(max-width: 800px) {
-    .navlist {
-        display: none;
     }
 }
 
@@ -71,7 +72,8 @@ header .logo {
 
 @media(max-width: 1052px) {
     header .logo p {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
     }
 }
 

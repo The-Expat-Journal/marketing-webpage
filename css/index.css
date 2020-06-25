@@ -225,17 +225,19 @@ ol li {
   padding-bottom: 3px;
   transition: 0.3s;
 }
+.nav-wrapper ul li a:hover {
+  color: #7E4E60;
+}
 @media (max-width: 800px) {
   .nav-wrapper {
     flex-flow: column wrap;
   }
   .nav-wrapper ul.menu {
     display: flex;
+    flex-direction: column;
   }
-}
-@media (max-width: 800px) {
-  .navlist {
-    display: none;
+  .nav-wrapper ul.menu li a {
+    font-size: 1.4rem;
   }
 }
 nav.nav-wrapper ul li a.register {
@@ -256,7 +258,8 @@ header .logo p {
 }
 @media (max-width: 1052px) {
   header .logo p {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 }
 /* HEADER STYLES END */
